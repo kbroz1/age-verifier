@@ -1,3 +1,38 @@
-body {
-    background:coral;
+body{
+background-image: url("https://wallpaperaccess.com/full/1862748.png");
+background-position: center; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+h1 {
+  text-align:center;
+  font-size: 50px;
+  font-family: 'Ruslan Display', cursive;
+  background-color:  #943C9B;
+  color:white;
+}
+
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.flex-one {
+  margin-bottom: 5%;
+  
+}
+
+.flex-two {
+height: 50%;
+width: 50%;
+margin-right: 5%;
+padding: 5px;
+background-color: #5E5EB5;
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
