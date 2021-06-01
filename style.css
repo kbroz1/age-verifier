@@ -4,15 +4,36 @@ background-position: center; /* Center the image */
   background-repeat: repeat; /* Do not repeat the image */
   background-attachment: fixed;
   background-size: cover;
-  
+font-size: font-family: 'Dosis', sans-serif;
 }
+
+.nav-links:first-child {
+  margin-left:50px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+  color:white;
+
+}
+
+nav {
+  background-color: #943C9B;
+  margin-left: -40px;
+  margin-right: -50px;
+
+}
+
 
 h1 {
   text-align:center;
   font-size: 50px;
-  font-family: 'Ruslan Display', cursive;
+  font-family: 'Dosis', sans-serif;
   background-color:  #943C9B;
   color:white;
+  margin-top:-40px;
 }
 
 .container {
@@ -31,8 +52,16 @@ h1 {
 height: 50%;
 width: 50%;
 margin-right: 5%;
-padding: 5px;
+padding: 10px;
 background-color: #5E5EB5;
-  color:white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color:white;
+font-family: 'Dosis', sans-serif;
+border-radius: 10px;
+
+}
+
+form {
+  background-color: darkgrey;
+  padding: 10px;
+  border-radius: 10px;
 }
