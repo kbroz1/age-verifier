@@ -4,18 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sign In</title>
 </head>
 <body>
 
-    <style>
-        input:valid {
-            background-color: greenyellow;
-        }
-
-
-
-    </style>
 
 <nav>
     <div class="nav-links">
@@ -25,12 +21,14 @@
         ||
         <a href="store.html">Shop</a>
     </div>
+    </nav>
     
-    <form name="contactForm" onsubmit="return validateForm()" action="" method="get">
+    <form name="contactForm" onsubmit="return validateForm()" action="" method="get" id = "form-container">
         <h2>Application Form</h2>
         <div class="row">
             <label>Full Name</label>
-            <input type="text" name="name">
+            <input type="text" required name="name">
+            <!--where errors will be displayeD:-->
             <div class="error" id="nameErr"></div>
         </div>
         <div class="row">

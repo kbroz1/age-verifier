@@ -106,6 +106,7 @@
 function printError (elemID, hintMsg){
     document.getElementById(elemID).innerHTML = hintMsg;
 }
+
 // Defining a function to validate form 
 
 function validateForm() {
@@ -127,7 +128,7 @@ function validateForm() {
             hobbies.push(checkboxes[i].value)
         }
     }
-}
+
     
   
     
@@ -217,7 +218,7 @@ if(name == "") {
     } else {
         // Creating a string from input data for preview
         //shows and confirms to user that form has been filled out
-        const dataPreview =   "You've entered the following details: \n" +
+        var dataPreview =   "You've entered the following details: \n" +
                             "Full Name: " + name + "\n" +
                             "Email Address: " + email + "\n" +
                             "Mobile Country: " + mobile + "\n" +
@@ -227,7 +228,7 @@ if(name == "") {
             dataPreview += "Hobbies: " + hobbies.join(", ");
         }
         // Display input data in a dialog box before submitting the form
-        document.getElementById("preview").innerHTML = dataPreview;
+        alert(dataPreview);
     }
 };
         

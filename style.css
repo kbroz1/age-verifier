@@ -4,7 +4,7 @@ background-position: center; /* Center the image */
   background-repeat: repeat; /* Do not repeat the image */
   background-attachment: fixed;
   background-size: cover;
-font-size: font-family: 'Dosis', sans-serif;
+font-size:'Dosis', sans-serif;
 }
 
 .nav-links:first-child {
@@ -64,4 +64,9 @@ form {
   background-color: darkgrey;
   padding: 10px;
   border-radius: 10px;
+  width: 25%;
+  margin-left: 40%;
+  font-family:'Dosis', sans-serif;
 }
+
+
