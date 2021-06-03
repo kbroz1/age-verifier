@@ -116,9 +116,7 @@ function validateForm() {
     const name = document.contactForm.name.value;
     const email = document.contactForm.email.value;
     const mobile = document.contactForm.mobile.value;
-    const country = document.contactForm.country.value;
     const gender = document.contactForm.gender.value;
-    const hobbies = [];
     const checkboxes = document.getElementsByName('hobbies[]');
     //the for loop will loop through all checkboxes and if there are any checkboxese that are checked, it will push the 
     // value of the checked box
@@ -135,7 +133,7 @@ function validateForm() {
     // Defining error variables with a default value
 
     //if any of these variables equal false ...
-    var nameErr = emailErr = moileErr = countryErr = genderErr = true;
+    var nameErr = emailErr = moileErr = genderErr = true;
 //validate name
 // //if name is equal to empty string.. if it is left blank.. then printError function is called and will print out 
 // the message "Please Enter a Valid Name"
@@ -192,14 +190,7 @@ if(name == "") {
     }
 
     
-    // Validate country
-    //select in a dropdown is equal to an empty string which means no value was entered
-    if(country == "Select") {
-        printError("countryErr", "Please select your country");
-    } else {
-        print("countryErr", "");
-        countryErr = false;
-    }
+   
     
     // Validate gender
     if(gender == "") {
@@ -213,7 +204,7 @@ if(name == "") {
     // Prevent the form from being submitted if there are any errors
     //If there are any errors, it will stop it from being submitted and will return the hint messages with the error 
 
-    if((nameErr || emailErr || mobileErr || countryErr || genderErr) == true) {
+    if((nameErr || emailErr || mobileErr  || genderErr) == true) {
         return false;
     } else {
         // Creating a string from input data for preview
@@ -222,10 +213,9 @@ if(name == "") {
                             "Full Name: " + name + "\n" +
                             "Email Address: " + email + "\n" +
                             "Mobile Country: " + mobile + "\n" +
-                            "Country: " + country + "\n" +
                             "Gender: " + gender + "\n";         
         if(hobbies.length) {
-            dataPreview += "Hobbies: " + hobbies.join(", ");
+            dataPreview += "Newsletter: " + hobbies.join(", ");
         }
         // Display input data in a dialog box before submitting the form
         alert(dataPreview);

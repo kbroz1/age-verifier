@@ -69,4 +69,20 @@ form {
   font-family:'Dosis', sans-serif;
 }
 
+form h2 {
+  text-align:center
+}
+
+.inputWide {
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color:#5E5EB5;
+  color:white;
+  font-family:'Dosis', sans-serif;
+  font-size: 20px;
+  margin-left:7rem;
+  border-radius: 5px;
+}
 
